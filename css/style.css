@@ -18,12 +18,11 @@ ul li{
     
 /*-----HEADER----*/
 .encabezado{
-    background-color: #ffffff;
+    background-color: #dad7cd;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .encabezado .logo{
     width: 137px;   
     height: 169px;
@@ -44,35 +43,32 @@ ul li{
     padding: 0px;
     
 }
-.navbar div a{
-    color: #ffffff;
-}
+
 .container-fluid{
     background-color: #c2c5aa;
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;    
 }
-.navbar .container-fluid{ 
-    display: flex;
-    align-items: end; 
-    align-items: center;}
-
 
 .navbar .container-fluid a{
     color: #256030;
-    font-size: 24px;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
     padding: 8px;
-    margin: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
     
 }
-.navbar-toggler{
+.navbar-toggler{ /*-hamburguesa-*/
     padding: 5px;
     margin-right: 3px;
 
 }
 .container-fluid .collapse .navbar-nav a{
     color: #256030;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 600;
     font-size: 22px;
 }
 .navbar .container-fluid :hover{
@@ -108,6 +104,7 @@ h2{
 }
 .hero h1{
     color: #ffffff;
+    width: 100%;
     font-size: 30px;
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
@@ -130,20 +127,17 @@ h2{
 
 /*--------SECTION NOSOTROS-------*/
 .nosotros{
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .nosotros div{
     padding: 40px;
     width: 85%;
 }
     
-.nosotros div h2{
-    background-color: #ffffff;
-}
 .nosotros div p{
     color: black;
     font-family: 'Ysabeau', sans-serif;
@@ -153,10 +147,6 @@ h2{
 }
 
 /*--------SECTION OPCIONES-------*/
-.opciones{
-    background-color: #ffffff;
-}
-
 .opciones h3{
     font-size: 23px;
     margin: 0px;
@@ -194,32 +184,41 @@ h2{
 }
 /*------------SECTION TESTIMONIOS-----*/
 .testimonios{
+    background-color: #c2c5aa;
+    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .testimonios h2{
-    font-size: 35px;
+    font-size: 30px;
+    color: #256030;
 }
 .carousel-inner div{
+    width: 100%;
+    
+}
+.carousel-inner p{
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
     font-size: 20px;
-    width: 300px;
-    height: 180px; 
     text-align: center;
+    width: 250px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 0px;
 }
-/*---no me funcionan las modificaciones de los botones del carrusel---*/
-.carousel button{
-    color: #256030;
-    margin-left:  60px;
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width: 2rem;
+    height: 2rem;
 }
+
 /*----PAGE NUESTRAS OPCIONES----*/
 
-.propuestas{
-    background-color: #ffffff
-}
 .propuestas h1{
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
@@ -283,9 +282,7 @@ h2{
 
 
 /*-----PAGE SERVICIOS----*/
-.servicios{
-    background-color: #ffffff
-}
+
 .servicios p{
     color: black;
     font-family: 'Ysabeau', sans-serif;
@@ -318,6 +315,9 @@ h2{
     -webkit-box-shadow: 8px -9px 17px -1px rgba(0,0,0,0.76);
     -moz-box-shadow: 8px -9px 17px -1px rgba(0,0,0,0.76);
 }
+.servicios ul{
+    padding: 0px;
+}
 .servicios ul li{
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
@@ -345,14 +345,19 @@ h2{
 .servicios .contenedor-tres ul li{
     list-style-image: url("../img/icono-lista-pendiente.png");
 }
+/*---------------------GALERIA---------------------------*/
 .fotos{
-    background-color: #ffffff;
-    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-
+.fotos h2{
+    background-color: #c2c5aa;
+    width: 100%;
+    margin-bottom: 0px;
+}
 .fotos .fotos-contenedor{
     width: 100%;
-    margin-top: 60px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 230px;
@@ -377,9 +382,7 @@ h2{
     grid-row: span 2;
 }
 /*--------PAGE UBICACION------*/
-.ubicacion{
-    background-color: #ffffff;
-}
+
 .ubicacion h1{
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
@@ -407,7 +410,7 @@ h2{
 
 .ubicacion a{
     background-color: #dad7cd;
-    color: #588157;
+    color: #256030;
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
     padding: 8px;
@@ -416,11 +419,6 @@ h2{
 }
 /*-----PAGE CONTACTO-----*/
 
-.formulario{
-    background-color: #ffffff;
-    padding: 10px;
-    
-}
 .formulario h1{
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
@@ -445,22 +443,40 @@ h2{
     padding: 10px;
     text-align: center;
 }
-.formulario .formulario-contenedor{
+.formulario .formulario-contenedor .primero{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
-.formulario .formulario-contenedor div{
+.formulario .formulario-contenedor .segundo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.formulario .formulario-contenedor .primero div{
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
-}
-.formulario .formulario-contenedor div input{
-    background-color: #ffffff;
+    width: 263px;
     margin: 10px;
+    background-color: #dad7cd;
+    color: #256030;
+
+}
+.formulario .formulario-contenedor .primero div input{
     font-family: 'Ysabeau', sans-serif;
     font-weight: 600;
     padding: 2px;
+    width: 100%;
+}
+.formulario .formulario-contenedor .segundo div input{
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 600;
+    padding: 2px;
+    color: #256030;
+    background-color: #dad7cd;
+    margin: 15px;
 }
 
 /*----------FOOTER----------------*/
@@ -507,16 +523,49 @@ h2{
 }
 @media screen and (max-width: 1100px) {
     .fotos .fotos-contenedor{
-        grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 230px;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: 230px;
     }
-    .fotos .fotos-contenedor .cuarta{
-        grid-row: span 2;
+    .fotos-contenedor{
+        grid-column: span 1;
+        grid-row: span 1;
     }
-} 
+    .fotos .fotos-contenedor .primera{
+        grid-column: span 2;
+    }
+    .fotos .fotos-contenedor .tercera{
+        grid-row: span 1;
+    }
+    .fotos .fotos-contenedor .sexta{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .fotos .fotos-contenedor .decima{
+        display: none;
+    }
+}    
+
 @media screen and (max-width: 990px) {
     .hero h1{
         font-size: 25px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .servicios img{
+        width: 360px;
+        height: 290px;
+    }
+}
+@media screen and (max-width: 850px){
+    .servicios .contenedor-uno{
+        flex-direction: column;
+    }
+    .servicios .contenedor-dos{
+        flex-direction: column;
+    }
+    .ubicacion .mapa iframe{
+        width: 600px;
+        height: 450px;
     }
 }
 @media screen and (max-width: 835px) {
@@ -531,6 +580,18 @@ h2{
         font-size: 14px;
     }
     .propuestas p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 670px){
+    .ubicacion .mapa iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .ubicacion h1{
+        font-size: 25px;
+    }
+    .ubicacion p{
         font-size: 15px;
     }
 }
@@ -580,5 +641,36 @@ h2{
     }
     .propuestas h2{
         font-size: 23px;
+    }
+    .fotos .fotos-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fotos .fotos-contenedor img{
+        width: 260px;
+        height: 190px;
+    }
+    .fotos .fotos-contenedor .decima{
+        display:block;
+    }
+}
+@media screen and (max-width: 500px){
+    .servicios img{
+        width: 260px;
+        height: 190px;
+    }
+    .servicios h1{
+        font-size: 33px;
+    }
+    .servicios p{
+        font-size: 15px;
+    }
+    .servicios h2{
+        font-size: 33px;
+    }
+    .servicios ul li{
+        font-size: 15px;
     }
 }
