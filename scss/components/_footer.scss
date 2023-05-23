@@ -1,0 +1,42 @@
+.pie{
+    background-color: nth($colores, 3);
+    @include flex (flex, space-evenly, center);
+    div{
+        .logo{
+            width: 107px;
+            height: 139px;
+            margin: 15px;
+        }
+    }
+    div{
+        ul{
+            padding: 0px;
+            margin: 0px;
+            li{
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                a{
+                    font-size: 20px;
+                    margin: 12px;
+                    font-family: 'Ysabeau', sans-serif;
+                    font-weight: 600;
+                    color: nth($colores, 2);
+                }
+            }
+        }
+    }
+    div{
+        margin: 15px;
+        a{
+            img{
+                margin: 5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

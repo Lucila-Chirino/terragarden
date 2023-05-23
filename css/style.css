@@ -505,10 +505,10 @@ h2{
 .pie a{
     margin: 10px;
 }
-/*----------MEDIAS QUERIES-------*/
+/*----------MEDIAS QUERIES-------
 
 @media screen and (max-width: 1150px) {
-    .propuestas-contenedor-uno{
+    /*.propuestas-contenedor-uno{
         flex-direction:column-reverse;
         margin-bottom: 70px;
     }
@@ -579,9 +579,7 @@ h2{
     nav ul li a{
         font-size: 14px;
     }
-    .propuestas p{
-        font-size: 15px;
-    }
+
 }
 @media screen and (max-width: 670px){
     .ubicacion .mapa iframe{
@@ -607,18 +605,7 @@ h2{
     .encabezado div{
         display: none;
     }
-    nav{
-        position: static;
-    }
-    nav ul{
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 5px;
-    }
-    nav ul li{
-        margin: 1px;
-    }
+    
     .pie{
         flex-direction: column;
         }
@@ -642,6 +629,9 @@ h2{
     .propuestas h2{
         font-size: 23px;
     }
+    .propuestas p{
+        font-size: 15px;
+    }
     .fotos .fotos-contenedor{
         display: flex;
         flex-direction: column;
@@ -656,7 +646,7 @@ h2{
         display:block;
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .servicios img{
         width: 260px;
         height: 190px;
@@ -673,4 +663,4 @@ h2{
     .servicios ul li{
         font-size: 15px;
     }
-}
+}*/

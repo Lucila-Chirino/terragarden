@@ -1,0 +1,44 @@
+//*PALETA DE COLORES
+
+$colores:
+#256030,
+#000000,
+#dad7cd,
+#c2c5aa,
+#ffffff;
+
+//*EXTEND
+
+%img-pag-opciones{
+    margin: 15px;
+    width: 350px;
+    height: 300px;
+    object-fit:cover;
+    box-shadow: 16px -16px 20px -9px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 16px -16px 20px -9px rgba(0,0,0,0.76);
+    -moz-box-shadow: 16px -16px 20px -9px rgba(0,0,0,0.76);
+}
+%img-pag-servicios{
+    margin: 15px;
+    width: 460px;
+    height: 390px;
+    box-shadow: 8px -9px 17px -1px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 8px -9px 17px -1px rgba(0,0,0,0.76);
+    -moz-box-shadow: 8px -9px 17px -1px rgba(0,0,0,0.76);
+}
+%botones{
+    background-color: nth($colores, 3);
+    color: nth($colores, 1);
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+//*MIXIN
+
+@mixin flex ($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}

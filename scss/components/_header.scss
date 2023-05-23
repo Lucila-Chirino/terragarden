@@ -1,0 +1,66 @@
+//*HEADER
+.encabezado{
+    background-color: nth($colores, 3);
+    @include flex (flex, space-between, center);
+    .logo{
+        width: 137px;   
+        height: 169px;
+        padding: 10px;
+    }
+    div{
+        margin: 15px;
+        a{
+            img{
+                margin: 5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+//*BARRA DE NAVEGACION
+.navbar{
+    padding: 0px;
+    .container-fluid{
+        background-color: nth($colores, 4);
+        margin: 0px;
+        padding: 0px; 
+        a{
+            color: nth($colores, 1);
+            font-family: 'Ysabeau', sans-serif;
+            font-weight: 600;
+            font-size: 22px;
+            padding: 8px;
+            margin-left: 25px;
+            margin-right: 25px;
+            transition: 1s;
+            &:hover{
+                color: nth($colores, 1);
+                transform: scale(1.1);
+            }
+        }
+        .navbar-toggler{
+            padding: 5px;
+            margin-right: 3px;
+            }
+        .collapse{
+            .navbar-nav{
+                a{
+                    color: nth($colores, 1);
+                    font-family: 'Ysabeau', sans-serif;
+                    font-weight: 600;
+                    font-size: 22px;
+                    transition: 1s;
+                    &:hover{
+                        color: nth($colores, 1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        
+        }
+    }
+}

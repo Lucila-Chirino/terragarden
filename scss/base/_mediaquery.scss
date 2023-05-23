@@ -1,0 +1,202 @@
+@media screen and (max-width: 1150px) {
+    .propuestas{
+        .propuestas-contenedor-uno{
+            flex-direction:column-reverse;
+            margin-bottom: 70px;
+        }
+        .propuestas-contenedor-dos{
+            flex-direction:column-reverse;
+            margin-bottom: 70px;
+        }
+        .propuestas-contenedor-tres{
+            flex-direction:column-reverse;
+            margin-bottom: 70px;
+        }
+    }
+} 
+
+@media screen and (max-width: 1100px) {
+    .fotos{
+        .fotos-contenedor{
+            grid-column: span 1;
+            grid-row: span 1;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows: 230px;
+            .primera{
+                grid-column: span 2;
+            }
+            .tercera{
+                grid-row: span 1;
+            }
+            .sexta{
+                grid-row: span 1;
+                grid-column: span 1;
+            }
+            .decima{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .hero h1{
+        font-size: 25px;
+    }
+    .servicios img{
+        width: 360px;
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .servicios{
+        .contenedor-uno{
+            flex-direction: column;
+        }
+        .contenedor-dos{
+            flex-direction: column;
+        }
+    }
+    .mapa{
+        iframe{
+            width: 600px;
+            height: 450px;}
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .hero{
+        h1{
+            font-size: 20px;
+            width: 100%;
+        }
+        a{
+            padding: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 670px){
+    .ubicacion{
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .mapa{
+            iframe{
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .encabezado{
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width: 117px;
+            height: 149px;
+        }
+        div{
+            display: none;
+        }
+    }
+    .pie{
+        flex-direction: column;
+        div{
+            .logo{
+                width: 97px;
+                height: 129px;
+                margin: 5px;
+            }
+        }
+        div{
+            ul{
+                li{
+                    a{font-size: 15px;} 
+                }
+            }
+        }
+        div{
+            margin: 5px;
+        }
+    }
+    .propuestas{
+        h1{
+            font-size: 30px;
+        }
+        .propuestas-contenedor-uno{
+            div{
+                h2{font-size: 23px;}
+                p{font-size: 15px;}
+            }
+            img{width: 250px;
+                height: 200px;}
+        }
+        .propuestas-contenedor-dos{
+            div{
+                h2{font-size: 23px;}
+                p{font-size: 15px;}
+            }
+            img{width: 250px;
+                height: 200px;}
+        }
+        .propuestas-contenedor-tres{
+            div{
+                h2{font-size: 23px;}
+                p{font-size: 15px;}
+            }
+            img{width: 250px;
+                height: 200px;}
+        }
+    }
+    .fotos{
+        .fotos-contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 260px;
+                height: 190px;
+            }
+            .decima{
+                display:block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .servicios{
+        h1{font-size: 33px;}
+        p{font-size: 15px;}
+        .contenedor-uno{
+            img{width: 260px;
+                height: 190px;}
+            ul{
+                li{font-size: 15px;}
+            }
+        }
+        h2{font-size: 33px;}
+        p{font-size: 15px;}
+        .contenedor-dos{
+            img{width: 260px;
+                height: 190px;}
+            ul{
+                li{font-size: 15px;}
+            }
+        }
+        .contenedor-tres{
+            h2{font-size: 33px;}
+            ul{
+                li{font-size: 15px;}
+            }
+        }
+    }
+}
