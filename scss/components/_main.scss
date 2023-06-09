@@ -88,32 +88,16 @@
     h2{
         font-size: 30px;
     }
-    div{
+    .carousel{
         .carousel-inner{
+            .carousel-item{    
+                transition:1s;
+            }
             div{
-                width: 100%;
                 p{
                     width: 250px;
-                    margin-left: 50px;
-                    margin-right: 50px;
-                    margin-bottom: 0px;
+                    height: 150px;
                 }
-            }
-        }
-        .carousel-control-prev{
-            width: 40px;
-            height: 150px;
-            .carousel-control-prev-icon{
-                width: 2rem;
-                height: 2rem;
-            }
-        }
-        .carousel-control-next{
-            width: 40px;
-            height: 150px;
-            .carousel-control-next-icon{
-                width: 2rem;
-                height: 2rem;
             }
         }
     }
@@ -124,23 +108,25 @@
         font-family: 'Ysabeau', sans-serif;
         font-weight: 600;
         font-size: 45px;
-        color: #256030;
+        color: nth($colores, 1);
         text-align: center;
         padding: 10px;
     }
     .propuestas-contenedor-uno{
         @include flex (flex, center, center);
+        margin: 25px;
         div{
             text-align: center;
             p{
-                padding: 10px;
+                padding: 20px;
                 margin-bottom: 20px;
             }
             a{
                 @extend %botones;
                 transition: 1s;
                 &:hover{
-                    transform: scale(1.2);
+                    background-color: nth($colores, 4);
+                    color: nth($colores, 1);
                 }
             }
         }
@@ -151,17 +137,19 @@
     .propuestas-contenedor-dos{
         @include flex (flex, center, center);
         flex-direction: row-reverse;
+        margin: 25px;
         div{
             text-align: center;
             p{
-                padding: 10px;
+                padding: 20px;
                 margin-bottom: 20px;
             }
             a{
                 @extend %botones;
                 transition: 1s;
                 &:hover{
-                    transform: scale(1.2);
+                    background-color: nth($colores, 4);
+                    color: nth($colores, 1);
                 }
             }
         }
@@ -171,16 +159,18 @@
     }
     .propuestas-contenedor-tres{
         @include flex (flex, center, center);
+        margin: 25px;
         div{
             text-align: center;
             p{
-                padding: 10px;
+                padding: 20px;
                 margin-bottom: 20px;}
             a{
                 @extend %botones;
                 transition: 1s;
                 &:hover{
-                    transform: scale(1.2);
+                    background-color: nth($colores, 4);
+                    color: nth($colores, 1);
                 }
             }
         }    
@@ -213,9 +203,14 @@
             li{
                 font-family: 'Ysabeau', sans-serif;
                 font-weight: 600;
+                color: nth($colores, 2);
                 font-size: 20px;
                 margin-left: 35px;
                 list-style-image: url("../img/iconol-lista.png");
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -237,9 +232,14 @@
             li{
                 font-family: 'Ysabeau', sans-serif;
                 font-weight: 600;
+                color: nth($colores, 2);
                 font-size: 20px;
                 margin-left: 35px;
                 list-style-image: url("../img/iconol-lista.png");
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -254,9 +254,14 @@
             li{
                 font-family: 'Ysabeau', sans-serif;
                 font-weight: 600;
+                color: nth($colores, 2);
                 font-size: 20px;
                 margin-left: 35px;
                 list-style-image: url("../img/icono-lista-pendiente.png");
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -328,7 +333,8 @@
             margin: 25px;
             transition: 1s;
             &:hover{
-                transform: scale(1.2);
+                background-color: nth($colores, 4);
+                color: nth($colores, 1);
             }
         }
     }
@@ -346,14 +352,14 @@
     p{
         padding: 10px;
         font-size: 25px;
-    }
+    }   
     .formulario-contenedor{
         h2{
-            font-size: 40px;
+            font-size: 30px;
             padding: 10px;
         }
         .primero{
-            @include flex (flex, center, center);        
+            @include flex (flex, center, center);
             flex-direction: column;
             div{
                 background-color: nth($colores, 3);
@@ -375,7 +381,10 @@
         }
         .segundo{
             @include flex (flex, center, center);
-            flex-direction: column;       
+            flex-direction: column;  
+            h2{
+                font-size: 25px;
+            }
             div{
                 input{
                     font-family: 'Ysabeau', sans-serif;

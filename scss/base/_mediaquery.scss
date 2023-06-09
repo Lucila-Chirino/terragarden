@@ -2,15 +2,15 @@
     .propuestas{
         .propuestas-contenedor-uno{
             flex-direction:column-reverse;
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
         .propuestas-contenedor-dos{
             flex-direction:column-reverse;
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
         .propuestas-contenedor-tres{
             flex-direction:column-reverse;
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
     }
 } 
@@ -131,25 +131,47 @@
             font-size: 30px;
         }
         .propuestas-contenedor-uno{
+            margin-bottom: 20px;
             div{
-                h2{font-size: 23px;}
-                p{font-size: 15px;}
+                h2{
+                    font-size: 23px;}
+                p{
+                    font-size: 15px;
+                    padding: 10px;}
+                a{
+                    font-size: 12px;
+                    padding: 8px;
+                }    
             }
             img{width: 250px;
                 height: 200px;}
         }
         .propuestas-contenedor-dos{
+            margin-bottom: 20px;
             div{
                 h2{font-size: 23px;}
-                p{font-size: 15px;}
+                p{
+                    font-size: 15px;
+                    padding: 10px;}
+                a{
+                    font-size: 12px;
+                    padding: 8px;
+                }    
             }
             img{width: 250px;
                 height: 200px;}
         }
         .propuestas-contenedor-tres{
+            margin-bottom: 20px;
             div{
                 h2{font-size: 23px;}
-                p{font-size: 15px;}
+                p{
+                    font-size: 15px;
+                    padding: 10px;}
+                a{
+                    font-size: 12px;
+                    padding: 8px;
+                } 
             }
             img{width: 250px;
                 height: 200px;}
